@@ -42,5 +42,5 @@ model.add(Dense(look_forward))
 model.compile(loss='mse', optimizer='adam')
 
 # 训练模型
-model.fit(X, y, epochs=5, batch_size=32)
+model.fit(X, y, epochs=5, batch_size=32, workers=8)
 
